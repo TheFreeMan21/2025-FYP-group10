@@ -1,18 +1,12 @@
 # Medical Imaging (Project Summary)
 
 ## Project background
- text here
+Skin cancer is one of the most common cancers affecting approximately 300 thousand people every year. Thankfully, early detection of cancerous skin cells drastically improves the survival rates of patients. That being said, access to dermatologists is not accessible everywhere in the world. 
 
 ## Dataset description
 
-## Stage 1: Image Segmentation
+## Segmentation of skin lesions
  text here 
-
-## Stage 2: Feature extraction
- more text here
-
-## Stage 3: Classification
-+ Detection of abnormalities
 
 
  ## Conclusions and reflection

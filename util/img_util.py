@@ -1,4 +1,5 @@
 import random
+import os
 
 import cv2
 
@@ -37,10 +38,9 @@ class ImageDataLoader:
         self.directory = directory
         self.shuffle = shuffle
         self.transform = transform
-        pic_list = []
 
         # get a sorted list of all files in the directory
-        # fill in with your own code below
+        self.file_list= sorted([os.path.join(directory, f) for f in os.listdir(directory) if f.lower().endswith(('.png', '.jpg', 'jpeg', '.bmp', '.tiff'))])
             
 
         if not self.file_list:

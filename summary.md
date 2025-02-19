@@ -11,7 +11,8 @@ This project is focused on improving the skin detection process by optimizing th
 A key part of early detection is a review of the skin lesion that is thought to be cancerous. Eventhough, this is predominantly done by doctors, developing an automated programme can result in a more efficient and accessible check up for the patient. To create a useful model, we need it to be highly accurate. In order to do so we must analyse diverse types of skin lesions and this is represented in the dataset we are provided. To efficiently analyse the skin lesion dataset first we will need to cleanup any  distractions off the skin lesions which can degrade the model's accuracy. Most common example of this, is the hair present in the region of the patient's skin lesion. The patient's Hair can obstruct the lesion or confuse the model, or thus comprimising the models verdict 
 
 
-##Image annotation
+## Image annotations
+An important component of this project is the annotation of the amount of hair in the provided pictures. All 5 members of our group have individually rated all 200 pictures on a scale from 0-2, 0 meaning no hair in the picture, 1 meaning some hair, and 2 meaning a lot of hair. Later in the project, these annotations will serve as input for model training and further analysis. Also, from these annotations we can measure inter-observer consistency between different annotators and intra-observer consistency for the same annotator. For measuring the inter-observer consistency, Cohens Kappa can be used to measure how much the annotations of two annotators agree.
 
 text here
 

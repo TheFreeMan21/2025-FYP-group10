@@ -3,6 +3,7 @@ import os
 
 import cv2
 
+import inpaint_util
 
 def readImageFile(file_path):
     # read image as an 8-bit array
@@ -60,9 +61,13 @@ class ImageDataLoader:
         #Iterating throught all the images and applying transformations if necessesary"
         for filepath in self.file_list:
             img_rgb, img_gray = readImageFile(filepath)
+            blackhat, tresh, img_out = inpaint_util.removeHair(img_rgb, img_gray)
+            saveImageFile(img_out, (filepath + '\new'))
 
             if self.transform:
                 img_gray= self.transform(img_gray)
                 img_rgb= self.transform(img_rgb)
-        
-        return img_rgb, img_gray
+  
+Images= ImageDataLoader('C:/Users/bruda/2025-FYP-group10/moles')
+
+Images.__iter__()

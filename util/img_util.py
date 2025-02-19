@@ -57,5 +57,12 @@ class ImageDataLoader:
         return self.num_batches
 
     def __iter__(self):
-        # fill in with your own code below
-        pass
+        #Iterating throught all the images and applying transformations if necessesary"
+        for filepath in self.file_list:
+            img_rgb, img_gray = readImageFile(filepath)
+
+            if self.transform:
+                img_gray= self.transform(img_gray)
+                img_rgb= self.transform(img_rgb)
+        
+        return img_rgb, img_gray

@@ -10,6 +10,11 @@ This project is focused on improving the skin detection process by optimizing th
 ## Dataset description
 A key part of early detection is a review of the skin lesion that is thought to be cancerous. Eventhough, this is predominantly done by doctors, developing an automated programme can result in a more efficient and accessible check up for the patient. To create a useful model, we need it to be highly accurate. In order to do so we must analyse diverse types of skin lesions and this is represented in the dataset we are provided. To efficiently analyse the skin lesion dataset first we will need to cleanup any  distractions off the skin lesions which can degrade the model's accuracy. Most common example of this, is the hair present in the region of the patient's skin lesion. The patient's Hair can obstruct the lesion or confuse the model, or thus comprimising the models verdict 
 
+
+##Image annotation
+
+text here
+
 ## Segmentation of skin lesions
  text here 
 

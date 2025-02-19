@@ -18,6 +18,7 @@ text here
  text here 
 
  ## Conclusions and reflection
+ Ideas - Removed the image, helps the model so that the skin lesion is not obstructed, but it affects the color and sometimes the size of the lesion, which will also inherently affect the result that the model gives. 
  
 
  

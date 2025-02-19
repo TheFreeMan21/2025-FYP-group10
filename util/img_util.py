@@ -62,7 +62,12 @@ class ImageDataLoader:
         for filepath in self.file_list:
             img_rgb, img_gray = readImageFile(filepath)
             blackhat, tresh, img_out = inpaint_util.removeHair(img_rgb, img_gray)
-            saveImageFile(img_out, (filepath + '\new'))
+
+            #Save the new images on a different folder/path 
+            dir_path = os.path.dirname(filepath)
+            new_dir = os.path.join(dir_path, "New")
+            os.makedirs(new_dir, exist_ok=True)
+            saveImageFile(img_out, os.path.join(new_dir, os.path.basename(filepath)))
 
             if self.transform:
                 img_gray= self.transform(img_gray)

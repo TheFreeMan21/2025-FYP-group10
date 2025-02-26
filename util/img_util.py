@@ -76,8 +76,4 @@ class ImageDataLoader:
             if self.transform:
                 img_gray= self.transform(img_gray)
                 img_rgb= self.transform(img_rgb)
-  
-Images= ImageDataLoader('C:/Users/bruda/2025-FYP-group10/data')
 
-
-Images.__iter__()

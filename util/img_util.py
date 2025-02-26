@@ -77,3 +77,4 @@ class ImageDataLoader:
                 img_gray= self.transform(img_gray)
                 img_rgb= self.transform(img_rgb)
 
+        yield img_rgb, img_gray

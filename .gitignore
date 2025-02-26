@@ -171,5 +171,5 @@ cython_debug/
 .pypirc
 
 #Pictures
-*.jpg
-*.png
+# *.jpg
+# *.png

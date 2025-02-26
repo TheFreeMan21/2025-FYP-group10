@@ -17,12 +17,8 @@ An important component of this project is the annotation of the amount of hair i
  text here 
 
  ## Conclusions and reflection
- Some conclusions that wer
- Ideas - Removed the image, helps the model so that the skin lesion is not obstructed, but it affects the color and sometimes the size of the lesion, which will also inherently affect the result that the model gives. 
 
-FINAL BULLET POINTS- 
-
-**__Strengths -__**
+**<u>Strengths -</u>**
 
 The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
@@ -36,7 +32,7 @@ Additionally, when evaluating moles, we must consider these modifications, as es
 1186
 1191 - lot of hair removed
 
-**__Weaknesses -__**
+**<u>Weaknesses -</u>**
 __White hairs not removed__
 
 | Before | After |

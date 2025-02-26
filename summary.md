@@ -17,7 +17,32 @@ An important component of this project is the annotation of the amount of hair i
  text here 
 
  ## Conclusions and reflection
+ Some conclusions that wer
  Ideas - Removed the image, helps the model so that the skin lesion is not obstructed, but it affects the color and sometimes the size of the lesion, which will also inherently affect the result that the model gives. 
+
+FINAL BULLET POINTS- 
+
+Good Examples - 
+
+1180 - we can use blur cleaner to fix it
+1186
+1191 - lot of hair removed
+
+Bad Examples- 
+
+White hairs not removed
+img 1287
+
+Bad Example: Size and shape of mole changed due to hair segmentation 
+When looking through our pictures, we also noticed that some of the moles change size and shape after the hair removal. Otherwise "perfectly" round moles suddenly have the shape of a cross. An example of this is visibly seen in the before and after of image 1362. 
+
+the mole has same color as the hair - brush thing
+
+cross examples (adds asymetry)
+img 1362
+img 1369 
+Lot of hair removed but size changed
+img 1181
  
 
  

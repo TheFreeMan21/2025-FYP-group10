@@ -40,10 +40,14 @@ class ImageDataLoader:
         self.directory = directory
         self.shuffle = shuffle
         self.transform = transform
+        i= 1179
 
         # get a sorted list of all files in the directory
-        self.file_list= sorted([os.path.join(directory, f) for f in os.listdir(directory) if f.lower().endswith(('.png', '.jpg', 'jpeg', '.bmp', '.tiff'))])
-            
+        # self.file_list= sorted([os.path.join(directory, f) for f in os.listdir(directory) if f.lower().endswith(('.png', '.jpg', 'jpeg', '.bmp', '.tiff'))])
+
+        # self.file_list= sorted([os.path.join(directory, f) for f in os.listdir(directory) for i in range(1179, 1379) if f.lower().endswith(('.png', '.jpg', 'jpeg', '.bmp', '.tiff') and i in f)])
+   
+        self.file_list= sorted([os.path.join(directory, f) for f in os.listdir(directory) if f.lower().endswith(('.png', '.jpg', 'jpeg', '.bmp', '.tiff')) and any(str(i) in f for i in range(1179, 1379))])
 
         if not self.file_list:
             raise ValueError("No image files found in the directory.")
@@ -73,7 +77,4 @@ class ImageDataLoader:
             if self.transform:
                 img_gray= self.transform(img_gray)
                 img_rgb= self.transform(img_rgb)
-  
-Images= ImageDataLoader('C:/Users/bruda/2025-FYP-group10/moles')
 
-Images.__iter__()

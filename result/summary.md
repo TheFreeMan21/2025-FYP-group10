@@ -38,6 +38,11 @@ When looking through our pictures, we also noticed that some of the moles change
 
 ![Alt text](example_photos/img_1362.png)
 
+| Before | After |
+|---------|---------|
+| ![Alt text](example_photos/img_1362.png) | ![Alt text](example_photos/img_after_1362.png) |
+
+
 the mole has same color as the hair - brush thing
 
 cross examples (adds asymetry)

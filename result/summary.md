@@ -22,7 +22,7 @@ An important component of this project is the annotation of the amount of hair i
 
 FINAL BULLET POINTS- 
 
-Strengths 
+**Strengths -**
 
 The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
@@ -36,7 +36,7 @@ Additionally, when evaluating moles, we must consider these modifications, as es
 1186
 1191 - lot of hair removed
 
-Weaknesses - 
+**Weaknesses -**
 
 White hairs not removed
 

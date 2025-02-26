@@ -42,16 +42,14 @@ White hairs not removed
 img 1287
 
 Bad Example: Size and shape of mole changed due to hair segmentation 
-When looking through our pictures, we also noticed that some of the moles change size and shape after the hair removal. Otherwise "perfectly" round moles suddenly have the shape of a cross. An example of this is visibly seen in the before and after of image 1362. 
+While reviewing our images, we also noticed that some of the moles change size and shape after hair removal. In some cases, previously round moles take on a cross-like appearance, as seen in image 1362.
 
 | Before | After |
 |---------|---------|
 | ![Alt text](example_photos/img_1362.png) | ![Alt text](example_photos/img_after_1362.png) |
 
-As the pictures show, something in the hair segmentation process is recognising some parts of the mole as hair. This could have to do with the mole having the same color as the hair in the photo, or 
+As the pictures show, something in the hair segmentation process is recognizing some parts of the mole as hair. This could have to do with the mole having the same color as the hair in the photo, or it can have to do with erosion. The fact that we are using a cross-shaped structuring element (MORPH_CROSS), which results in the removal of pixels in a cross-like pattern.
 
-
-the mole has same color as the hair - brush thing
 
 cross examples (adds asymetry)
 img 1362

@@ -79,3 +79,10 @@ class ImageDataLoader:
                 img_rgb= self.transform(img_rgb)
 
         yield img_rgb, img_gray
+
+
+filepath= 'C:/Users/bruda/2025-FYP-group10/data'
+Images= ImageDataLoader(filepath)
+
+
+Images.__iter__()

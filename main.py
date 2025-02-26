@@ -1,7 +1,19 @@
 from os.path import join
 
 import matplotlib.pyplot as plt
+import sys
+import os
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+project_root = os.path.dirname(current_dir)  
+
+
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
+# Now import modules
 from util.img_util import readImageFile, saveImageFile
 from util.inpaint_util import removeHair
 

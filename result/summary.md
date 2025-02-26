@@ -18,7 +18,7 @@ An important component of this project is the annotation of the amount of hair i
 
  ## Conclusions and reflection
 
-**<u>Strengths -</u>**
+**Strengths:**
 
 The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
@@ -32,8 +32,8 @@ Additionally, when evaluating moles, we must consider these modifications, as es
 1186
 1191 - lot of hair removed
 
-**<u>Weaknesses -</u>**
-__White hairs not removed__
+**Weaknesses:** 
+**White hairs not removed**
 
 | Before | After |
 |---------|---------|
@@ -45,7 +45,7 @@ In this case, the problem is caused by the code in inpaint_util.py, which relies
 
 To fix this, we can also use MORPH_TOPHAT, which detects white hairs by identifying bright features in the image.
 
-__Size and shape of mole changed due to hair segmentation__
+**Size and shape of mole changed due to hair segmentation**
 
 While reviewing our images, we also noticed that some of the moles change size and shape after hair removal. In some cases, previously round moles take on a cross-like appearance, as seen in image 1362.
 

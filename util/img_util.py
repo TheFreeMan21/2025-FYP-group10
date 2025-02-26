@@ -1,7 +1,6 @@
 
 import random
 import os
-
 import cv2
 
 import inpaint_util

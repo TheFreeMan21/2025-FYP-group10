@@ -41,7 +41,7 @@ Some successfully processed images appear slightly blurred, with certain areas l
 
 | Before | After |
 |---------|---------|
-| ![Alt text](example_photos/img_1218.png) | ![Alt text](example_photos/img_after_1218.png) |
+| ![Alt text](example_photos/img_1218.png) | ![Alt text](example_photos/img_1218after.png) |
 
 This isssue can potentially affect the feature 'shape', which might prove to be important in diagnostics. To address this problem, incorporating a denoising step in future processing may help improve image clarity. 
 

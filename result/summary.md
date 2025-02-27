@@ -24,13 +24,19 @@ The presence of hair in an image can potentially influence the performance of a 
 
 Upon reviewing the results, we observed that the algorithm performs well in some cases but encounters challenges in others. Specifically, it is effective at removing dark hairs, both in images with minimal hair (see Example 1) and those with significant hair coverage (see Example 2).
 
-However, it is crucial that the mole remains visible and retains all features necessary for accurate classification. Some successfully processed images appear slightly blurred, with certain areas looking lighter than in the original. To address this, incorporating a denoising step in future processing may help improve image clarity.
+(examples here 1186
+1191 - lot of hair removed)
 
-Additionally, when evaluating moles, we must consider these modifications, as essential features could be unintentionally altered or removed, potentially affecting diagnostic accuracy
+That being said, it is crucial that the mole remains visible and retains all features necessary for accurate classification. 
+To check for any modifications of essential features, which can potentially affecting diagnostic accuracy we have revised and compared the 'before' and 'after' version of each of the 200 images.
 
-1180 - we can use blur cleaner to fix it
-1186
-1191 - lot of hair removed
+After careful examination the following insights were uncovered:
+
+We have noticed that some successfully processed images appear slightly blurred, with certain areas looking lighter than in the original. 
+
+(example of fading - 1180 - we can use blur cleaner to fix it)
+
+This isssue can potentially affect the feature 'shape', which might prove to be important in diagnostics. To address this problem, incorporating a denoising step in future processing may help improve image clarity. 
 
 **Weaknesses:** 
 **White hairs not removed**

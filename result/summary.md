@@ -15,7 +15,7 @@ An important component of this project is the annotation of the amount of hair i
 
  ## Reflection
 
-The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
+The presence of hair in an image can potentially influence the performance of a machine-learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
 **Successfully removing dark hair**
 
@@ -43,7 +43,7 @@ Some successfully processed images appear slightly blurred, with certain areas l
 |---------|---------|
 | ![Alt text](example_photos/img_1218.png) | ![Alt text](example_photos/img_1218_after.png) |
 
-This isssue can potentially affect the feature 'shape', which might prove to be important in diagnostics. To address this problem, incorporating a denoising step in future processing may help improve image clarity. 
+This issue can potentially affect the feature 'shape', which might prove to be important in diagnostics. To address this problem, incorporating a denoising step in future processing may help improve image clarity. 
 
 **White hairs not removed**
 
@@ -59,19 +59,19 @@ To fix this, we can also use MORPH_TOPHAT, which detects white hairs by identify
 
 **Size and shape of mole changed due to hair segmentation**
 
-While reviewing our images, we also noticed that some of the moles change size and shape after hair removal. In some cases, previously round moles take on a cross-like appearance, as seen in image 1362.
+While reviewing our images, we also noticed that some of the moles changed size and shape after hair removal. In some cases, previously round moles take on a cross-like appearance, as seen in image 1362.
 
 | Before | After |
 |---------|---------|
 | ![Alt text](example_photos/img_1362.png) | ![Alt text](example_photos/img_after_1362.png) |
 
-As the pictures show, something in the hair segmentation process is recognizing some parts of the mole as hair. This could have to do with the mole having the same color as the hair in the photo, or it can have to do with erosion. Also the fact that we are using a cross-shaped structuring element (MORPH_CROSS), could be resulting in the removal of pixels in a cross-like pattern. This suggests that our current approach to hair segmentation may unintentionally be removing "too much", which is something could potentially investigate further in the project. 
+As the pictures show, something in the hair segmentation process is recognizing some parts of the mole as hair. This could have to do with the mole having the same colour as the hair in the photo, or it could have to do with erosion. Also, the fact that we are using a cross-shaped structuring element (MORPH_CROSS), could result in the removal of pixels in a cross-like pattern. This suggests that our current approach to hair segmentation may unintentionally be removing "too much", which is something could potentially investigate further in the project. 
 
 ## Conclusion 
-This project explored the use of machine learning in early detection of skin cancer. In this part of the project, the primary focus was on the segmentation of hair, and hair removal from pictures of moles. Our algorithm effectively removed dark hairs from the photos, however we also encountered a few problems. 
+This project explored the use of machine learning in the early detection of skin cancer. In this part of the project, the primary focus was on the segmentation of hair, and hair removal from pictures of moles. Our algorithm effectively removed dark hairs from the photos, however we also encountered a few problems. 
 
 Especially when trying to remove white hairs, our algorithm did not perform as well as for the dark hairs, due to the reliance on black-hat morphology, which only highlights dark features. Future improvements could incorporate top-hat morphology to address this.
 
-Furthermore, we noticed that the algorithm caused changes in size and shape of some moles, resulting in moles having a cross-like pattern after applying the algorithm. This is likely due to our choice of a cross-shaped structuring element. Another problem we encountered, was that some images appeared blurred or faded after processing, which may impact diagnostic accuracy. A denoising step could help preserve image clarity.
+Furthermore, we noticed that the algorithm caused changes in the size and shape of some moles, resulting in moles having a cross-like pattern after applying the algorithm. This is likely due to our choice of a cross-shaped structuring element. Another problem we encountered, was that some images appeared blurred or faded after processing, which may impact diagnostic accuracy. A denoising step could help preserve image clarity.
 
 To summarize, future work could include experimenting with different types of morphology, to enhance both the removal of white hairs and to ensure that our structuring element is not removing parts of the mole. In addition, working on improving the clarity of photos by adding a denoising step.

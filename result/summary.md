@@ -33,7 +33,7 @@ Example 2:
 | ![Alt text](example_photos/img_1191.png) | ![Alt text](example_photos/img_after_1191.png) |
 
 
-That being said, it is crucial that the mole remains visible and retains all features necessary for accurate classification. 
+It is crucial that the mole remains visible and retains all features necessary for accurate classification. 
 To check for any modifications of essential features, which can potentially affecting diagnostic accuracy we have revised and compared the 'before' and 'after' version of each of the 200 images. After careful examination the following insights were uncovered:
 
 **Distortion of shape quality and loss of details** 

@@ -75,7 +75,7 @@ class ImageDataLoader:
         yield img_rgb, img_gray
 
 
-filepath= 'C:/Users/bruda/2025-FYP-group10/data'
+filepath= './data'
 Images= ImageDataLoader(filepath)
 
 

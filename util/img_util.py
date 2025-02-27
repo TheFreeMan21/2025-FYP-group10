@@ -72,7 +72,7 @@ class ImageDataLoader:
                 img_gray= self.transform(img_gray)
                 img_rgb= self.transform(img_rgb)
 
-        yield img_rgb, img_gray
+        return img_rgb, img_gray
 
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -80,6 +80,5 @@ relative_path_to_data = os.path.join(current_directory, '../data')
 data_folder_path = os.path.normpath(relative_path_to_data)
 
 Images= ImageDataLoader(data_folder_path)
-
 
 Images.__iter__()

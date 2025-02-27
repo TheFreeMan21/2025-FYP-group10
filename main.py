@@ -15,7 +15,10 @@ import os
 
 file_path = os.path.abspath(os.path.join(os.getcwd(), "data", "example.jpg"))
 
-save_dir = os.path.abspath(os.path.join("..", "result"))
+current_directory = os.path.dirname(os.path.abspath(__file__))
+relative_path_to_data = os.path.join(current_directory, './result')
+data_folder_path = os.path.normpath(relative_path_to_data) #save directory for the output
+
 
 # read an image file
 img_rgb, img_gray = readImageFile(file_path)
@@ -54,5 +57,5 @@ plt.tight_layout()
 plt.show()
 
 # save the output image
-save_file_path = join(save_dir, 'output.jpg')
+save_file_path = join(data_folder_path, 'output.jpg')
 saveImageFile(img_out, save_file_path)

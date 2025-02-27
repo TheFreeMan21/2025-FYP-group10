@@ -39,6 +39,7 @@ It is crucial that the mole remains visible and retains all features necessary f
 To check for any modifications of essential features, which can potentially affect diagnostic accuracy, we have revised and compared the 'before' and 'after' versions of each of the 200 images. After careful examination, the following insights were uncovered:
 
 **Distortion of shape quality and loss of details** 
+
 Some successfully processed images appear slightly blurred, with certain areas looking lighter than in the original 
 
 | Before | After |

@@ -13,15 +13,11 @@ As said prior, a key part of early detection is a review of the skin lesion that
 ## Image annotations
 An important component of this project is the annotation of the amount of hair in the provided pictures. All 5 members of our group have individually rated all 200 pictures on a scale from 0-2, 0 meaning no hair in the picture, 1 meaning some hair, and 2 meaning a lot of hair. Later in the project, these annotations will serve as input for model training and further analysis. Also, from these annotations we can measure inter-observer consistency between different annotators and intra-observer consistency for the same annotator. For measuring the inter-observer consistency, Cohens Kappa can be used to measure how much the annotations of two annotators agree.
 
-## Segmentation of skin lesions
- text here 
-
  ## Conclusions and reflection
-
-**Strengths:**
 
 The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
+**Strengths: Removing darm hair**
 Upon reviewing the results, we observed that the algorithm performs well in some cases but encounters challenges in others. Specifically, it is effective at removing dark hairs, both in images with minimal hair (see Example 1) and those with significant hair coverage (see Example 2).
 
 (examples here 1186

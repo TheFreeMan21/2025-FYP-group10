@@ -58,11 +58,4 @@ While reviewing our images, we also noticed that some of the moles change size a
 As the pictures show, something in the hair segmentation process is recognizing some parts of the mole as hair. This could have to do with the mole having the same color as the hair in the photo, or it can have to do with erosion. The fact that we are using a cross-shaped structuring element (MORPH_CROSS), which results in the removal of pixels in a cross-like pattern.
 
 
-cross examples (adds asymetry)
-img 1362
-img 1369 
-Lot of hair removed but size changed
-img 1181
- 
-
  

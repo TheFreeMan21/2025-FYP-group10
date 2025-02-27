@@ -13,9 +13,6 @@ As said prior, a key part of early detection is a review of the skin lesion that
 ## Image annotations
 An important component of this project is the annotation of the amount of hair in the provided pictures. All 5 members of our group have individually rated all 200 pictures on a scale from 0-2, 0 meaning no hair in the picture, 1 meaning some hair, and 2 meaning a lot of hair. Later in the project, these annotations will serve as input for model training and further analysis. Also, from these annotations we can measure inter-observer consistency between different annotators and intra-observer consistency for the same annotator. For measuring the inter-observer consistency, Cohens Kappa can be used to measure how much the annotations of two annotators agree.
 
-## Segmentation of skin lesions
- text here 
-
  ## Conclusions and reflection
 
 **Strengths:**

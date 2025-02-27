@@ -13,7 +13,7 @@ As said prior, a key part of early detection is a review of the skin lesion that
 ## Image annotations
 An important component of this project is the annotation of the amount of hair in the provided pictures. All 5 members of our group have individually rated all 200 pictures on a scale from 0-2, 0 meaning no hair in the picture, 1 meaning some hair, and 2 meaning a lot of hair. Later in the project, these annotations will serve as input for model training and further analysis. Also, from these annotations we can measure inter-observer consistency between different annotators and intra-observer consistency for the same annotator. For measuring the inter-observer consistency, Cohens Kappa can be used to measure how much the annotations of two annotators agree.
 
- ## Conclusions and reflection
+ ## Reflection
 
 The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
@@ -66,6 +66,10 @@ While reviewing our images, we also noticed that some of the moles change size a
 | ![Alt text](example_photos/img_1362.png) | ![Alt text](example_photos/img_after_1362.png) |
 
 As the pictures show, something in the hair segmentation process is recognizing some parts of the mole as hair. This could have to do with the mole having the same color as the hair in the photo, or it can have to do with erosion. The fact that we are using a cross-shaped structuring element (MORPH_CROSS), which results in the removal of pixels in a cross-like pattern.
+
+##Conclusion 
+
+
 
 
  

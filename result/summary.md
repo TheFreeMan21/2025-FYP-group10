@@ -17,7 +17,7 @@ An important component of this project is the annotation of the amount of hair i
 
 The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
-**Strengths: Removing dark hair**
+**Successfully removing dark hair**
 
 Upon reviewing the results, we observed that the algorithm performs well in some cases but encounters challenges in others. Specifically, it is effective at removing dark hairs, both in images with a small amount of hair (see Example 1) and those with significant hair coverage (see Example 2).
 
@@ -33,18 +33,18 @@ Example 2:
 | ![Alt text](example_photos/img_1191.png) | ![Alt text](example_photos/img_after_1191.png) |
 
 
-That being said, it is crucial that the mole remains visible and retains all features necessary for accurate classification. 
-To check for any modifications of essential features, which can potentially affecting diagnostic accuracy we have revised and compared the 'before' and 'after' version of each of the 200 images.
+It is crucial that the mole remains visible and retains all features necessary for accurate classification. 
+To check for any modifications of essential features, which can potentially affecting diagnostic accuracy we have revised and compared the 'before' and 'after' version of each of the 200 images. After careful examination the following insights were uncovered:
 
-After careful examination the following insights were uncovered:
+**Distortion of shape quality and loss of details** 
+Some successfully processed images appear slightly blurred, with certain areas looking lighter than in the original 
 
-We have noticed that some successfully processed images appear slightly blurred, with certain areas looking lighter than in the original. 
-
-(example of fading - 1180 - we can use blur cleaner to fix it)
+| Before | After |
+|---------|---------|
+| ![Alt text](example_photos/img_1218.png) | ![Alt text](example_photos/img_1218_after.png) |
 
 This isssue can potentially affect the feature 'shape', which might prove to be important in diagnostics. To address this problem, incorporating a denoising step in future processing may help improve image clarity. 
 
-**Weaknesses:** 
 **White hairs not removed**
 
 | Before | After |

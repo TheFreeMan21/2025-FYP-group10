@@ -50,7 +50,7 @@ This isssue can potentially affect the feature 'shape', which might prove to be 
 
 | Before | After |
 |---------|---------|
-| ![Alt text](example_photos/img_1199.png) | ![Alt text](example_photos/img_after_1199.png) |
+| ![Alt text](example_photos/img_1287.png) | ![Alt text](example_photos/img_after_1287.png) |
 
 One key issue we noticed in the segmented photos was that, even though the process worked well with dark hairs next to skin lesions, it often only partially removed or completely ignored white hairs in the image. This leads to a limitation, as white hairs blocking the lesions can still affect the validity and accuracy of the program.
 

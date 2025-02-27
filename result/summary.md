@@ -17,7 +17,7 @@ An important component of this project is the annotation of the amount of hair i
 
 The presence of hair in an image can potentially influence the performance of a machine learning algorithm. To avoid this issue, we applied a hair removal algorithm to preprocess the images. The algorithm processes a selected set of images and returns hair-free versions while preserving other relevant details.
 
-**Strengths: Removing dark hair**
+**Successfully removing dark hair**
 
 Upon reviewing the results, we observed that the algorithm performs well in some cases but encounters challenges in others. Specifically, it is effective at removing dark hairs, both in images with a small amount of hair (see Example 1) and those with significant hair coverage (see Example 2).
 
@@ -45,7 +45,6 @@ Some successfully processed images appear slightly blurred, with certain areas l
 
 This isssue can potentially affect the feature 'shape', which might prove to be important in diagnostics. To address this problem, incorporating a denoising step in future processing may help improve image clarity. 
 
-**Weaknesses:** 
 **White hairs not removed**
 
 | Before | After |

@@ -20,6 +20,11 @@ The presence of hair in an image can potentially influence the performance of a 
 **Strengths: Removing darm hair**
 Upon reviewing the results, we observed that the algorithm performs well in some cases but encounters challenges in others. Specifically, it is effective at removing dark hairs, both in images with minimal hair (see Example 1) and those with significant hair coverage (see Example 2).
 
+Example 1:
+| Before | After |
+|---------|---------|
+| ![Alt text](example_photos/img_1186.png) | ![Alt text](example_photos/img_after_1186.png) |
+
 (examples here 1186
 1191 - lot of hair removed)
 
